@@ -8,12 +8,23 @@
 
 import UIKit
 
-class loginController: UIViewController {
+class facebookLoginController : UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
     
+    
+    @IBAction func facebookLoginDidTap(_ sender: Any) {
+    }
+    
+    
+    @IBAction func phoneLoginDidTap(_ sender: Any) {
+    }
+    
+    
+    @IBAction func emailLoginDidTap(_ sender: Any) {
+    }
     
 }

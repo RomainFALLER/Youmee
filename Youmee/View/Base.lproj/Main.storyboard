@@ -10,19 +10,78 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Youmee" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="loginController" customModule="Youmee" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="akU-TE-UwK">
+                                <rect key="frame" x="128" y="600" width="119" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="akU-TE-UwK" secondAttribute="height" multiplier="119:27" id="V6N-GO-u7Q"/>
+                                    <constraint firstAttribute="width" secondItem="akU-TE-UwK" secondAttribute="height" multiplier="119:27" id="Y3r-eu-5NV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="Je n'ai pas Facebook">
+                                    <color key="titleColor" red="0.414475441" green="0.40835887189999998" blue="0.40801480410000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dqw-BN-RC0">
+                                <rect key="frame" x="0.0" y="635" width="375" height="3"/>
+                                <color key="backgroundColor" red="0.79992324110000002" green="0.80005550380000001" blue="0.79989498849999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="3" id="PZj-bt-JkO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000298023224" translatesAutoresizingMaskIntoConstraints="NO" id="lHo-9K-INh">
+                                <rect key="frame" x="0.0" y="638" width="375" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="ezS-BH-Gaq"/>
+                                </constraints>
+                                <string key="text">Youmee ne poste rien sur Facebook. En vous connectant vous êtes d’accord avec notre politique 
+de vie privé.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="7"/>
+                                <color key="textColor" red="0.39486980440000002" green="0.38875001669999998" blue="0.38840949540000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bx4-48-WSF">
+                                <rect key="frame" x="30" y="542" width="314" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="4Vw-h1-Fey"/>
+                                    <constraint firstAttribute="width" secondItem="Bx4-48-WSF" secondAttribute="height" multiplier="157:28" id="bXn-Kn-HDM"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="loginButton"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dqw-BN-RC0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="8nA-An-wXB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Bx4-48-WSF" secondAttribute="trailing" constant="31" id="C4O-fP-ue2"/>
+                            <constraint firstItem="lHo-9K-INh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="GlZ-H3-WJw"/>
+                            <constraint firstItem="lHo-9K-INh" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="HzY-Za-wQB"/>
+                            <constraint firstItem="dqw-BN-RC0" firstAttribute="top" secondItem="akU-TE-UwK" secondAttribute="bottom" constant="8" id="NhT-Ce-9A6"/>
+                            <constraint firstItem="lHo-9K-INh" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="SAp-p6-xQM"/>
+                            <constraint firstItem="lHo-9K-INh" firstAttribute="top" secondItem="dqw-BN-RC0" secondAttribute="bottom" id="dHj-7k-ULm"/>
+                            <constraint firstAttribute="trailing" secondItem="dqw-BN-RC0" secondAttribute="trailing" id="f7B-q7-AAt"/>
+                            <constraint firstItem="akU-TE-UwK" firstAttribute="top" secondItem="Bx4-48-WSF" secondAttribute="bottom" constant="2" id="fhp-E6-Hqy"/>
+                            <constraint firstItem="akU-TE-UwK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ioN-dz-XsB"/>
+                            <constraint firstItem="Bx4-48-WSF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="udf-fY-6UW"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="26.53673163418291"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="loginButton" width="555" height="102"/>
+    </resources>
 </document>

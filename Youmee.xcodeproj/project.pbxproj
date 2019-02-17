@@ -10,13 +10,14 @@
 		14BE6C0D2218C92B00FD0BA2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BE6C0C2218C92B00FD0BA2 /* User.swift */; };
 		302003E7C8164473F3D05A50 /* Pods_YoumeeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24AF5EB85F411172546A1D2D /* Pods_YoumeeTests.framework */; };
 		5071449922189CAE005B5255 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5071449822189CAE005B5255 /* AppDelegate.swift */; };
-		5071449B22189CAE005B5255 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5071449A22189CAE005B5255 /* ViewController.swift */; };
 		5071449E22189CAE005B5255 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5071449C22189CAE005B5255 /* Main.storyboard */; };
 		507144A122189CAE005B5255 /* Youmee.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5071449F22189CAE005B5255 /* Youmee.xcdatamodeld */; };
 		507144A322189CB0005B5255 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 507144A222189CB0005B5255 /* Assets.xcassets */; };
 		507144A622189CB0005B5255 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 507144A422189CB0005B5255 /* LaunchScreen.storyboard */; };
 		507144B122189CB0005B5255 /* YoumeeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507144B022189CB0005B5255 /* YoumeeTests.swift */; };
 		507144BC22189CB0005B5255 /* YoumeeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507144BB22189CB0005B5255 /* YoumeeUITests.swift */; };
+		50D5B17F2219B3D9001251E3 /* loginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D5B17E2219B3D9001251E3 /* loginController.swift */; };
+		50D5B1822219B6A3001251E3 /* loginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D5B1812219B6A3001251E3 /* loginModel.swift */; };
 		8EFE010BE142B5CC00CFFC0E /* Pods_YoumeeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6AD3188CB14E8CBDCD72CE1 /* Pods_YoumeeUITests.framework */; };
 		9D014C86E10C2E6117E3DCBB /* Pods_Youmee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA3D600A8381A5B919BA8D19 /* Pods_Youmee.framework */; };
 /* End PBXBuildFile section */
@@ -45,7 +46,6 @@
 		447C0B55A6FE38FF73E1DDCB /* Pods-YoumeeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YoumeeTests.debug.xcconfig"; path = "Target Support Files/Pods-YoumeeTests/Pods-YoumeeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5071449522189CAE005B5255 /* Youmee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Youmee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5071449822189CAE005B5255 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5071449A22189CAE005B5255 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5071449D22189CAE005B5255 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		507144A022189CAE005B5255 /* Youmee.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Youmee.xcdatamodel; sourceTree = "<group>"; };
 		507144A222189CB0005B5255 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,6 +57,8 @@
 		507144B722189CB0005B5255 /* YoumeeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YoumeeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		507144BB22189CB0005B5255 /* YoumeeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoumeeUITests.swift; sourceTree = "<group>"; };
 		507144BD22189CB0005B5255 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50D5B17E2219B3D9001251E3 /* loginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginController.swift; sourceTree = "<group>"; };
+		50D5B1812219B6A3001251E3 /* loginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = loginModel.swift; path = Youmee/loginModel.swift; sourceTree = SOURCE_ROOT; };
 		69B761B42D92537364DFFD49 /* Pods-YoumeeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YoumeeUITests.debug.xcconfig"; path = "Target Support Files/Pods-YoumeeUITests/Pods-YoumeeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A6AD3188CB14E8CBDCD72CE1 /* Pods_YoumeeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YoumeeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA3D600A8381A5B919BA8D19 /* Pods_Youmee.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Youmee.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -153,10 +155,10 @@
 		5071449722189CAE005B5255 /* Youmee */ = {
 			isa = PBXGroup;
 			children = (
+				50D5B1802219B3DF001251E3 /* Controller */,
 				5076EB8C22189DB20082468B /* View */,
 				5076EB8B22189DA80082468B /* Model */,
 				14BE6C0E2218CBDE00FD0BA2 /* Supporting Files */,
-				5071449A22189CAE005B5255 /* ViewController.swift */,
 				14BE6C0F2218CBFC00FD0BA2 /* Core Data */,
 			);
 			path = Youmee;
@@ -211,6 +213,7 @@
 		5076EB9322189E940082468B /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				50D5B1812219B6A3001251E3 /* loginModel.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -220,6 +223,14 @@
 			children = (
 			);
 			path = Map;
+			sourceTree = "<group>";
+		};
+		50D5B1802219B3DF001251E3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				50D5B17E2219B3D9001251E3 /* loginController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		D3FC66D6EE302C29BB8AEB34 /* Pods */ = {
@@ -469,8 +480,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50D5B1822219B6A3001251E3 /* loginModel.swift in Sources */,
 				14BE6C0D2218C92B00FD0BA2 /* User.swift in Sources */,
-				5071449B22189CAE005B5255 /* ViewController.swift in Sources */,
+				50D5B17F2219B3D9001251E3 /* loginController.swift in Sources */,
 				507144A122189CAE005B5255 /* Youmee.xcdatamodeld in Sources */,
 				5071449922189CAE005B5255 /* AppDelegate.swift in Sources */,
 			);

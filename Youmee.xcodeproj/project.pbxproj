@@ -1,0 +1,825 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		14BE6C0D2218C92B00FD0BA2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BE6C0C2218C92B00FD0BA2 /* User.swift */; };
+		302003E7C8164473F3D05A50 /* Pods_YoumeeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24AF5EB85F411172546A1D2D /* Pods_YoumeeTests.framework */; };
+		5071449922189CAE005B5255 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5071449822189CAE005B5255 /* AppDelegate.swift */; };
+		5071449B22189CAE005B5255 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5071449A22189CAE005B5255 /* ViewController.swift */; };
+		5071449E22189CAE005B5255 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5071449C22189CAE005B5255 /* Main.storyboard */; };
+		507144A122189CAE005B5255 /* Youmee.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5071449F22189CAE005B5255 /* Youmee.xcdatamodeld */; };
+		507144A322189CB0005B5255 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 507144A222189CB0005B5255 /* Assets.xcassets */; };
+		507144A622189CB0005B5255 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 507144A422189CB0005B5255 /* LaunchScreen.storyboard */; };
+		507144B122189CB0005B5255 /* YoumeeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507144B022189CB0005B5255 /* YoumeeTests.swift */; };
+		507144BC22189CB0005B5255 /* YoumeeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507144BB22189CB0005B5255 /* YoumeeUITests.swift */; };
+		8EFE010BE142B5CC00CFFC0E /* Pods_YoumeeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6AD3188CB14E8CBDCD72CE1 /* Pods_YoumeeUITests.framework */; };
+		9D014C86E10C2E6117E3DCBB /* Pods_Youmee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA3D600A8381A5B919BA8D19 /* Pods_Youmee.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		507144AD22189CB0005B5255 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5071448D22189CAE005B5255 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5071449422189CAE005B5255;
+			remoteInfo = Youmee;
+		};
+		507144B822189CB0005B5255 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5071448D22189CAE005B5255 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5071449422189CAE005B5255;
+			remoteInfo = Youmee;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		016006CCFDD7D5AC6308E26A /* Pods-YoumeeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YoumeeTests.release.xcconfig"; path = "Target Support Files/Pods-YoumeeTests/Pods-YoumeeTests.release.xcconfig"; sourceTree = "<group>"; };
+		14BE6C0C2218C92B00FD0BA2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		24AF5EB85F411172546A1D2D /* Pods_YoumeeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YoumeeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		447C0B55A6FE38FF73E1DDCB /* Pods-YoumeeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YoumeeTests.debug.xcconfig"; path = "Target Support Files/Pods-YoumeeTests/Pods-YoumeeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5071449522189CAE005B5255 /* Youmee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Youmee.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5071449822189CAE005B5255 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5071449A22189CAE005B5255 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5071449D22189CAE005B5255 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		507144A022189CAE005B5255 /* Youmee.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Youmee.xcdatamodel; sourceTree = "<group>"; };
+		507144A222189CB0005B5255 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		507144A522189CB0005B5255 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		507144A722189CB0005B5255 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		507144AC22189CB0005B5255 /* YoumeeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YoumeeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		507144B022189CB0005B5255 /* YoumeeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoumeeTests.swift; sourceTree = "<group>"; };
+		507144B222189CB0005B5255 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		507144B722189CB0005B5255 /* YoumeeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YoumeeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		507144BB22189CB0005B5255 /* YoumeeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoumeeUITests.swift; sourceTree = "<group>"; };
+		507144BD22189CB0005B5255 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69B761B42D92537364DFFD49 /* Pods-YoumeeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YoumeeUITests.debug.xcconfig"; path = "Target Support Files/Pods-YoumeeUITests/Pods-YoumeeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A6AD3188CB14E8CBDCD72CE1 /* Pods_YoumeeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YoumeeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA3D600A8381A5B919BA8D19 /* Pods_Youmee.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Youmee.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1DCD80200756D6FA2077213 /* Pods-YoumeeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YoumeeUITests.release.xcconfig"; path = "Target Support Files/Pods-YoumeeUITests/Pods-YoumeeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E3BDB810FDC3A635A4B129A5 /* Pods-Youmee.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Youmee.release.xcconfig"; path = "Target Support Files/Pods-Youmee/Pods-Youmee.release.xcconfig"; sourceTree = "<group>"; };
+		EB81C1617CD404E277BC22E3 /* Pods-Youmee.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Youmee.debug.xcconfig"; path = "Target Support Files/Pods-Youmee/Pods-Youmee.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5071449222189CAE005B5255 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D014C86E10C2E6117E3DCBB /* Pods_Youmee.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		507144A922189CB0005B5255 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				302003E7C8164473F3D05A50 /* Pods_YoumeeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		507144B422189CB0005B5255 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EFE010BE142B5CC00CFFC0E /* Pods_YoumeeUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14BE6C0B2218C8A400FD0BA2 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		14BE6C0E2218CBDE00FD0BA2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5071449822189CAE005B5255 /* AppDelegate.swift */,
+				507144A222189CB0005B5255 /* Assets.xcassets */,
+				507144A722189CB0005B5255 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		14BE6C0F2218CBFC00FD0BA2 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				5071449F22189CAE005B5255 /* Youmee.xcdatamodeld */,
+			);
+			path = "Core Data";
+			sourceTree = "<group>";
+		};
+		4A801DDB549A680FCDF4FE31 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA3D600A8381A5B919BA8D19 /* Pods_Youmee.framework */,
+				24AF5EB85F411172546A1D2D /* Pods_YoumeeTests.framework */,
+				A6AD3188CB14E8CBDCD72CE1 /* Pods_YoumeeUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5071448C22189CAE005B5255 = {
+			isa = PBXGroup;
+			children = (
+				5071449722189CAE005B5255 /* Youmee */,
+				507144AF22189CB0005B5255 /* YoumeeTests */,
+				507144BA22189CB0005B5255 /* YoumeeUITests */,
+				5071449622189CAE005B5255 /* Products */,
+				D3FC66D6EE302C29BB8AEB34 /* Pods */,
+				4A801DDB549A680FCDF4FE31 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5071449622189CAE005B5255 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5071449522189CAE005B5255 /* Youmee.app */,
+				507144AC22189CB0005B5255 /* YoumeeTests.xctest */,
+				507144B722189CB0005B5255 /* YoumeeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5071449722189CAE005B5255 /* Youmee */ = {
+			isa = PBXGroup;
+			children = (
+				5076EB8C22189DB20082468B /* View */,
+				5076EB8B22189DA80082468B /* Model */,
+				14BE6C0E2218CBDE00FD0BA2 /* Supporting Files */,
+				5071449A22189CAE005B5255 /* ViewController.swift */,
+				14BE6C0F2218CBFC00FD0BA2 /* Core Data */,
+			);
+			path = Youmee;
+			sourceTree = "<group>";
+		};
+		507144AF22189CB0005B5255 /* YoumeeTests */ = {
+			isa = PBXGroup;
+			children = (
+				507144B022189CB0005B5255 /* YoumeeTests.swift */,
+				507144B222189CB0005B5255 /* Info.plist */,
+			);
+			path = YoumeeTests;
+			sourceTree = "<group>";
+		};
+		507144BA22189CB0005B5255 /* YoumeeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				507144BB22189CB0005B5255 /* YoumeeUITests.swift */,
+				507144BD22189CB0005B5255 /* Info.plist */,
+			);
+			path = YoumeeUITests;
+			sourceTree = "<group>";
+		};
+		5076EB8B22189DA80082468B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				14BE6C0B2218C8A400FD0BA2 /* Profile */,
+				5076EB9422189E990082468B /* Map */,
+				5076EB9322189E940082468B /* Login */,
+				5076EB9222189E860082468B /* Chat */,
+				14BE6C0C2218C92B00FD0BA2 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5076EB8C22189DB20082468B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				507144A422189CB0005B5255 /* LaunchScreen.storyboard */,
+				5071449C22189CAE005B5255 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5076EB9222189E860082468B /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		5076EB9322189E940082468B /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		5076EB9422189E990082468B /* Map */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		D3FC66D6EE302C29BB8AEB34 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EB81C1617CD404E277BC22E3 /* Pods-Youmee.debug.xcconfig */,
+				E3BDB810FDC3A635A4B129A5 /* Pods-Youmee.release.xcconfig */,
+				447C0B55A6FE38FF73E1DDCB /* Pods-YoumeeTests.debug.xcconfig */,
+				016006CCFDD7D5AC6308E26A /* Pods-YoumeeTests.release.xcconfig */,
+				69B761B42D92537364DFFD49 /* Pods-YoumeeUITests.debug.xcconfig */,
+				E1DCD80200756D6FA2077213 /* Pods-YoumeeUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5071449422189CAE005B5255 /* Youmee */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 507144C022189CB0005B5255 /* Build configuration list for PBXNativeTarget "Youmee" */;
+			buildPhases = (
+				B3F2FE4D608818E21A312089 /* [CP] Check Pods Manifest.lock */,
+				5071449122189CAE005B5255 /* Sources */,
+				5071449222189CAE005B5255 /* Frameworks */,
+				5071449322189CAE005B5255 /* Resources */,
+				A7AFDA7B8C7E3FD2CECA9825 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Youmee;
+			productName = Youmee;
+			productReference = 5071449522189CAE005B5255 /* Youmee.app */;
+			productType = "com.apple.product-type.application";
+		};
+		507144AB22189CB0005B5255 /* YoumeeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 507144C322189CB0005B5255 /* Build configuration list for PBXNativeTarget "YoumeeTests" */;
+			buildPhases = (
+				F05EA18D74D16947A4B3D5C7 /* [CP] Check Pods Manifest.lock */,
+				507144A822189CB0005B5255 /* Sources */,
+				507144A922189CB0005B5255 /* Frameworks */,
+				507144AA22189CB0005B5255 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				507144AE22189CB0005B5255 /* PBXTargetDependency */,
+			);
+			name = YoumeeTests;
+			productName = YoumeeTests;
+			productReference = 507144AC22189CB0005B5255 /* YoumeeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		507144B622189CB0005B5255 /* YoumeeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 507144C622189CB0005B5255 /* Build configuration list for PBXNativeTarget "YoumeeUITests" */;
+			buildPhases = (
+				EF66E700590B8D19386FDE7B /* [CP] Check Pods Manifest.lock */,
+				507144B322189CB0005B5255 /* Sources */,
+				507144B422189CB0005B5255 /* Frameworks */,
+				507144B522189CB0005B5255 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				507144B922189CB0005B5255 /* PBXTargetDependency */,
+			);
+			name = YoumeeUITests;
+			productName = YoumeeUITests;
+			productReference = 507144B722189CB0005B5255 /* YoumeeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5071448D22189CAE005B5255 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "FALLER Romain";
+				TargetAttributes = {
+					5071449422189CAE005B5255 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					507144AB22189CB0005B5255 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 5071449422189CAE005B5255;
+					};
+					507144B622189CB0005B5255 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 5071449422189CAE005B5255;
+					};
+				};
+			};
+			buildConfigurationList = 5071449022189CAE005B5255 /* Build configuration list for PBXProject "Youmee" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5071448C22189CAE005B5255;
+			productRefGroup = 5071449622189CAE005B5255 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5071449422189CAE005B5255 /* Youmee */,
+				507144AB22189CB0005B5255 /* YoumeeTests */,
+				507144B622189CB0005B5255 /* YoumeeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5071449322189CAE005B5255 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				507144A622189CB0005B5255 /* LaunchScreen.storyboard in Resources */,
+				507144A322189CB0005B5255 /* Assets.xcassets in Resources */,
+				5071449E22189CAE005B5255 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		507144AA22189CB0005B5255 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		507144B522189CB0005B5255 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A7AFDA7B8C7E3FD2CECA9825 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Youmee/Pods-Youmee-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Youmee/Pods-Youmee-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3F2FE4D608818E21A312089 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Youmee-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF66E700590B8D19386FDE7B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YoumeeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F05EA18D74D16947A4B3D5C7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YoumeeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5071449122189CAE005B5255 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14BE6C0D2218C92B00FD0BA2 /* User.swift in Sources */,
+				5071449B22189CAE005B5255 /* ViewController.swift in Sources */,
+				507144A122189CAE005B5255 /* Youmee.xcdatamodeld in Sources */,
+				5071449922189CAE005B5255 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		507144A822189CB0005B5255 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				507144B122189CB0005B5255 /* YoumeeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		507144B322189CB0005B5255 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				507144BC22189CB0005B5255 /* YoumeeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		507144AE22189CB0005B5255 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5071449422189CAE005B5255 /* Youmee */;
+			targetProxy = 507144AD22189CB0005B5255 /* PBXContainerItemProxy */;
+		};
+		507144B922189CB0005B5255 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5071449422189CAE005B5255 /* Youmee */;
+			targetProxy = 507144B822189CB0005B5255 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5071449C22189CAE005B5255 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5071449D22189CAE005B5255 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		507144A422189CB0005B5255 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				507144A522189CB0005B5255 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		507144BE22189CB0005B5255 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		507144BF22189CB0005B5255 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		507144C122189CB0005B5255 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB81C1617CD404E277BC22E3 /* Pods-Youmee.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G8XCAXGYV2;
+				INFOPLIST_FILE = "$(SRCROOT)/Youmee/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Wolfy.Youmee;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		507144C222189CB0005B5255 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3BDB810FDC3A635A4B129A5 /* Pods-Youmee.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G8XCAXGYV2;
+				INFOPLIST_FILE = "$(SRCROOT)/Youmee/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Wolfy.Youmee;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		507144C422189CB0005B5255 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 447C0B55A6FE38FF73E1DDCB /* Pods-YoumeeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G8XCAXGYV2;
+				INFOPLIST_FILE = YoumeeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Wolf.YoumeeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Youmee.app/Youmee";
+			};
+			name = Debug;
+		};
+		507144C522189CB0005B5255 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 016006CCFDD7D5AC6308E26A /* Pods-YoumeeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G8XCAXGYV2;
+				INFOPLIST_FILE = YoumeeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Wolf.YoumeeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Youmee.app/Youmee";
+			};
+			name = Release;
+		};
+		507144C722189CB0005B5255 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69B761B42D92537364DFFD49 /* Pods-YoumeeUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G8XCAXGYV2;
+				INFOPLIST_FILE = YoumeeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Wolf.YoumeeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Youmee;
+			};
+			name = Debug;
+		};
+		507144C822189CB0005B5255 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1DCD80200756D6FA2077213 /* Pods-YoumeeUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G8XCAXGYV2;
+				INFOPLIST_FILE = YoumeeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Wolf.YoumeeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Youmee;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5071449022189CAE005B5255 /* Build configuration list for PBXProject "Youmee" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				507144BE22189CB0005B5255 /* Debug */,
+				507144BF22189CB0005B5255 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		507144C022189CB0005B5255 /* Build configuration list for PBXNativeTarget "Youmee" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				507144C122189CB0005B5255 /* Debug */,
+				507144C222189CB0005B5255 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		507144C322189CB0005B5255 /* Build configuration list for PBXNativeTarget "YoumeeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				507144C422189CB0005B5255 /* Debug */,
+				507144C522189CB0005B5255 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		507144C622189CB0005B5255 /* Build configuration list for PBXNativeTarget "YoumeeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				507144C722189CB0005B5255 /* Debug */,
+				507144C822189CB0005B5255 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5071449F22189CAE005B5255 /* Youmee.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				507144A022189CAE005B5255 /* Youmee.xcdatamodel */,
+			);
+			currentVersion = 507144A022189CAE005B5255 /* Youmee.xcdatamodel */;
+			path = Youmee.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5071448D22189CAE005B5255 /* Project object */;
+}

@@ -26,6 +26,7 @@
                                 <state key="normal" backgroundImage="phoneLoginButton"/>
                                 <connections>
                                     <action selector="phoneLoginDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZDA-Yg-EHC"/>
+                                    <segue destination="e19-vf-kUY" kind="show" id="aAL-Nf-04W"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nous prenons la protection de votre vie privée très au sérieux. Nous ne publions rien sur Facebook" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l5R-Vk-hMm">
@@ -86,7 +87,18 @@
                     <view key="view" contentMode="scaleToFill" id="cMt-WK-yAe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Se connecter avec une adresse e-mail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wE7-gl-ait">
+                                <rect key="frame" x="52" y="124" width="310" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wE7-gl-ait" firstAttribute="centerX" secondItem="cMt-WK-yAe" secondAttribute="centerX" id="67m-mw-7m0"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="RLu-pN-luh"/>
                     </view>
                 </viewController>

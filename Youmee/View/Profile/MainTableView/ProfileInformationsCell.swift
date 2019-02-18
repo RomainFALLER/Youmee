@@ -10,7 +10,7 @@ import UIKit
 
 class ProfileInformationCell: UITableViewCell {
     
-    let user = User(id: "1", username: "wdyben", photo: "Facebook", email: "benoitfagot@gmail.com", bio: "bonjour je m'appelle benoit", birthday: "31/12/1994", phoneNum: "",ville: "Paris")
+    let user = User(id: "1", username: "wdyben", photo: "Facebook", email: "benoitfagot@gmail.com", bio: "bonjour je m'appelle benoit", birthday: "31/12/1994", phoneNum: "",ville: "Paris",networks: NetworkService.shared.initArrayOfNetwork())
     let userservice = UserService()
 
     @IBOutlet weak var usernameLabel: UILabel!

@@ -172,14 +172,6 @@
             path = Profile;
             sourceTree = "<group>";
         };
-        14BE6C37221A044200FD0BA2 /* Login */ = {
-            isa = PBXGroup;
-            children = (
-                50D5B17E2219B3D9001251E3 /* loginController.swift */,
-            );
-            path = Login;
-            sourceTree = "<group>";
-        };
         14BE6C40221A2B6700FD0BA2 /* MainTableView */ = {
             isa = PBXGroup;
             children = (

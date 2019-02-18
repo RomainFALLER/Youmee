@@ -27,7 +27,6 @@
 		507144B122189CB0005B5255 /* YoumeeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507144B022189CB0005B5255 /* YoumeeTests.swift */; };
 		507144BC22189CB0005B5255 /* YoumeeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507144BB22189CB0005B5255 /* YoumeeUITests.swift */; };
 		50D5B1822219B6A3001251E3 /* loginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D5B1812219B6A3001251E3 /* loginModel.swift */; };
-		50E80ED7221B55B50082192D /* loginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E80ED6221B55B50082192D /* loginController.swift */; };
 		8EFE010BE142B5CC00CFFC0E /* Pods_YoumeeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6AD3188CB14E8CBDCD72CE1 /* Pods_YoumeeUITests.framework */; };
 		9D014C86E10C2E6117E3DCBB /* Pods_Youmee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA3D600A8381A5B919BA8D19 /* Pods_Youmee.framework */; };
 /* End PBXBuildFile section */
@@ -78,7 +77,6 @@
 		507144BB22189CB0005B5255 /* YoumeeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoumeeUITests.swift; sourceTree = "<group>"; };
 		507144BD22189CB0005B5255 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50D5B1812219B6A3001251E3 /* loginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = loginModel.swift; path = Youmee/loginModel.swift; sourceTree = SOURCE_ROOT; };
-		50E80ED6221B55B50082192D /* loginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginController.swift; sourceTree = "<group>"; };
 		69B761B42D92537364DFFD49 /* Pods-YoumeeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YoumeeUITests.debug.xcconfig"; path = "Target Support Files/Pods-YoumeeUITests/Pods-YoumeeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A6AD3188CB14E8CBDCD72CE1 /* Pods_YoumeeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YoumeeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA3D600A8381A5B919BA8D19 /* Pods_Youmee.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Youmee.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -322,7 +320,6 @@
 			isa = PBXGroup;
 			children = (
 				14BE6C36221A043600FD0BA2 /* Profile */,
-				50E80ED6221B55B50082192D /* loginController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -580,7 +577,6 @@
 				14BE6C45221B1E0600FD0BA2 /* Network.swift in Sources */,
 				14BE6C0D2218C92B00FD0BA2 /* User.swift in Sources */,
 				14BE6C322219FDF900FD0BA2 /* buttonExtension.swift in Sources */,
-				50E80ED7221B55B50082192D /* loginController.swift in Sources */,
 				14BE6C3F221A289E00FD0BA2 /* NetworkList.swift in Sources */,
 				14BE6C3B221A04D100FD0BA2 /* ProfileVC.swift in Sources */,
 				14BE6C47221B246800FD0BA2 /* NetworkStatus.swift in Sources */,

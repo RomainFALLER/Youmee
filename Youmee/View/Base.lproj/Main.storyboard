@@ -206,11 +206,18 @@ de vie privé.</string>
                                                         <constraint firstAttribute="height" constant="1" id="qyh-gu-YEm"/>
                                                     </constraints>
                                                 </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bio" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RpW-83-pKr">
+                                                    <rect key="frame" x="15" y="163" width="360" height="14.5"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="UQY-eH-e6L" firstAttribute="leading" secondItem="frf-Eo-3ZZ" secondAttribute="leadingMargin" id="016-A9-wEk"/>
                                                 <constraint firstItem="UQY-eH-e6L" firstAttribute="top" secondItem="bOI-nw-49t" secondAttribute="bottom" constant="8" id="7zk-4v-T0k"/>
                                                 <constraint firstItem="5WU-MQ-Mu6" firstAttribute="leading" secondItem="frf-Eo-3ZZ" secondAttribute="leading" id="9z0-Ek-jho"/>
+                                                <constraint firstAttribute="trailing" secondItem="RpW-83-pKr" secondAttribute="trailing" id="B9B-Sp-WKb"/>
                                                 <constraint firstItem="Slj-cP-BpI" firstAttribute="leading" secondItem="bOI-nw-49t" secondAttribute="trailing" constant="10" id="GHi-fD-E2y"/>
                                                 <constraint firstItem="ZZq-X1-MrD" firstAttribute="top" secondItem="o6y-Wk-Ifh" secondAttribute="bottom" id="M82-4x-0C5"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="Slj-cP-BpI" secondAttribute="trailing" id="MjJ-9a-hIV"/>
@@ -220,10 +227,12 @@ de vie privé.</string>
                                                 <constraint firstItem="2rt-wE-Ngg" firstAttribute="top" secondItem="bOI-nw-49t" secondAttribute="top" id="Uhn-55-yYe"/>
                                                 <constraint firstItem="Slj-cP-BpI" firstAttribute="top" secondItem="ZZq-X1-MrD" secondAttribute="bottom" constant="5" id="XAC-a6-bHS"/>
                                                 <constraint firstItem="S0b-6a-HIW" firstAttribute="centerX" secondItem="2rt-wE-Ngg" secondAttribute="centerX" id="XAZ-UQ-d5c"/>
+                                                <constraint firstItem="RpW-83-pKr" firstAttribute="top" secondItem="w70-JG-S5X" secondAttribute="bottom" constant="5" id="XkB-xe-hP2"/>
                                                 <constraint firstItem="5Bd-Qk-pKi" firstAttribute="top" secondItem="Slj-cP-BpI" secondAttribute="bottom" constant="17.5" id="YAa-hW-zPB"/>
                                                 <constraint firstItem="o6y-Wk-Ifh" firstAttribute="centerX" secondItem="ZZq-X1-MrD" secondAttribute="centerX" id="cGs-rL-50s"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="UQY-eH-e6L" secondAttribute="bottom" constant="50" id="eec-49-miV"/>
                                                 <constraint firstItem="5Bd-Qk-pKi" firstAttribute="trailing" secondItem="frf-Eo-3ZZ" secondAttribute="trailingMargin" id="ehe-Fm-Rke"/>
+                                                <constraint firstItem="RpW-83-pKr" firstAttribute="leading" secondItem="frf-Eo-3ZZ" secondAttribute="leadingMargin" id="imw-9R-Bqw"/>
                                                 <constraint firstItem="w70-JG-S5X" firstAttribute="leading" secondItem="UQY-eH-e6L" secondAttribute="leading" id="nmJ-Dq-PrM"/>
                                                 <constraint firstItem="2rt-wE-Ngg" firstAttribute="bottom" secondItem="o6y-Wk-Ifh" secondAttribute="bottom" id="oAi-kb-mtv"/>
                                                 <constraint firstItem="o6y-Wk-Ifh" firstAttribute="leading" secondItem="2rt-wE-Ngg" secondAttribute="trailing" constant="47" id="p7L-OV-8fe"/>
@@ -236,6 +245,13 @@ de vie privé.</string>
                                                 <constraint firstItem="ZZq-X1-MrD" firstAttribute="trailing" secondItem="frf-Eo-3ZZ" secondAttribute="trailingMargin" id="zm3-ts-wRt"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="ageLabel" destination="w70-JG-S5X" id="UmJ-C2-Glt"/>
+                                            <outlet property="bioLabel" destination="RpW-83-pKr" id="BQU-0j-as7"/>
+                                            <outlet property="cityLabel" destination="5Bd-Qk-pKi" id="lPK-8v-xFL"/>
+                                            <outlet property="userImage" destination="bOI-nw-49t" id="2Cr-eR-2Pi"/>
+                                            <outlet property="usernameLabel" destination="UQY-eH-e6L" id="q59-nP-BUG"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ProfileNetworkCellIdentifier" rowHeight="167" id="lxP-z6-ExR" customClass="NetworkTableViewCell" customModule="Youmee" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="218" width="375" height="167"/>

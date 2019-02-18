@@ -37,7 +37,6 @@ extension ProfileVC :UITableViewDataSource{
         }
         if row == 1{
             let cell = tableView.dequeueReusableCell(withIdentifier: "ProfileNetworkCellIdentifier") as! NetworkTableViewCell
-            print("network cell create")
             return cell
         }
         else{

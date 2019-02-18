@@ -17,6 +17,7 @@
 		14BE6C45221B1E0600FD0BA2 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BE6C44221B1E0600FD0BA2 /* Network.swift */; };
 		14BE6C47221B246800FD0BA2 /* NetworkStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BE6C46221B246800FD0BA2 /* NetworkStatus.swift */; };
 		14BE6C4A221B26C400FD0BA2 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BE6C49221B26C400FD0BA2 /* UserService.swift */; };
+		14BE6C4D221B4C7100FD0BA2 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BE6C4C221B4C7100FD0BA2 /* NetworkService.swift */; };
 		302003E7C8164473F3D05A50 /* Pods_YoumeeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24AF5EB85F411172546A1D2D /* Pods_YoumeeTests.framework */; };
 		5071449922189CAE005B5255 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5071449822189CAE005B5255 /* AppDelegate.swift */; };
 		5071449E22189CAE005B5255 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5071449C22189CAE005B5255 /* Main.storyboard */; };
@@ -60,6 +61,7 @@
 		14BE6C44221B1E0600FD0BA2 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		14BE6C46221B246800FD0BA2 /* NetworkStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkStatus.swift; sourceTree = "<group>"; };
 		14BE6C49221B26C400FD0BA2 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		14BE6C4C221B4C7100FD0BA2 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		24AF5EB85F411172546A1D2D /* Pods_YoumeeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YoumeeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		447C0B55A6FE38FF73E1DDCB /* Pods-YoumeeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YoumeeTests.debug.xcconfig"; path = "Target Support Files/Pods-YoumeeTests/Pods-YoumeeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5071449522189CAE005B5255 /* Youmee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Youmee.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -203,6 +205,7 @@
 				14BE6C46221B246800FD0BA2 /* NetworkStatus.swift */,
 				14BE6C3E221A289E00FD0BA2 /* NetworkList.swift */,
 				14BE6C44221B1E0600FD0BA2 /* Network.swift */,
+				14BE6C4C221B4C7100FD0BA2 /* NetworkService.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -589,6 +592,7 @@
 				14BE6C3F221A289E00FD0BA2 /* NetworkList.swift in Sources */,
 				14BE6C3B221A04D100FD0BA2 /* ProfileVC.swift in Sources */,
 				14BE6C47221B246800FD0BA2 /* NetworkStatus.swift in Sources */,
+				14BE6C4D221B4C7100FD0BA2 /* NetworkService.swift in Sources */,
 				14BE6C35221A036500FD0BA2 /* ProfileInformationsCell.swift in Sources */,
 				507144A122189CAE005B5255 /* Youmee.xcdatamodeld in Sources */,
 				14BE6C3D221A088000FD0BA2 /* NetworkTableViewCell.swift in Sources */,

@@ -18,10 +18,9 @@ class User{
     var birthday: String
     var phoneNum: String
     var city: String
+    var networks: [Network]
 
-
-    
-    init(id: String, username: String, photo: String, email: String, bio: String, birthday: String, phoneNum: String,ville:String)
+    init(id: String, username: String, photo: String, email: String, bio: String, birthday: String, phoneNum: String,ville:String,networks: NetworkService.)
     {
         self.user_id = id
         self.username = username

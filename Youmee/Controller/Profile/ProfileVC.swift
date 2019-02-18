@@ -32,6 +32,7 @@ extension ProfileVC :UITableViewDataSource{
         let row = indexPath.row
         if row == 0{
             let cell = tableView.dequeueReusableCell(withIdentifier: "ProfileInformationCellIdentifier") as! ProfileInformationCell
+            cell.selectionStyle = .none
             return cell
         }
         if row == 1{
@@ -47,6 +48,3 @@ extension ProfileVC :UITableViewDataSource{
         return UITableView.automaticDimension
     }
 }
-extension ProfileVC : UITableViewDelegate{
-}
-

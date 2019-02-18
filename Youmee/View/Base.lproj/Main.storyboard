@@ -120,7 +120,7 @@ de vie privé.</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" estimatedRowHeight="600" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gok-ME-SDk">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" estimatedRowHeight="600" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gok-ME-SDk">
                                 <rect key="frame" x="0.0" y="20" width="375" height="598"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
@@ -128,7 +128,7 @@ de vie privé.</string>
                                         <rect key="frame" x="0.0" y="28" width="375" height="190"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RuC-FO-J2b" id="frf-Eo-3ZZ">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="189.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="190"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Item_profile" translatesAutoresizingMaskIntoConstraints="NO" id="bOI-nw-49t">
@@ -199,14 +199,24 @@ de vie privé.</string>
                                                     <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5WU-MQ-Mu6">
+                                                    <rect key="frame" x="0.0" y="189" width="375" height="1"/>
+                                                    <color key="backgroundColor" red="0.84997694481170971" green="0.86363461774431272" blue="0.88112337123318973" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="qyh-gu-YEm"/>
+                                                    </constraints>
+                                                </view>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="UQY-eH-e6L" firstAttribute="leading" secondItem="frf-Eo-3ZZ" secondAttribute="leadingMargin" id="016-A9-wEk"/>
                                                 <constraint firstItem="UQY-eH-e6L" firstAttribute="top" secondItem="bOI-nw-49t" secondAttribute="bottom" constant="8" id="7zk-4v-T0k"/>
+                                                <constraint firstItem="5WU-MQ-Mu6" firstAttribute="leading" secondItem="frf-Eo-3ZZ" secondAttribute="leading" id="9z0-Ek-jho"/>
                                                 <constraint firstItem="Slj-cP-BpI" firstAttribute="leading" secondItem="bOI-nw-49t" secondAttribute="trailing" constant="10" id="GHi-fD-E2y"/>
                                                 <constraint firstItem="ZZq-X1-MrD" firstAttribute="top" secondItem="o6y-Wk-Ifh" secondAttribute="bottom" id="M82-4x-0C5"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="Slj-cP-BpI" secondAttribute="trailing" id="MjJ-9a-hIV"/>
                                                 <constraint firstItem="w70-JG-S5X" firstAttribute="top" secondItem="UQY-eH-e6L" secondAttribute="bottom" constant="8" id="NkM-I4-cOp"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="w70-JG-S5X" secondAttribute="trailing" constant="293" id="OKm-nA-Ssh"/>
+                                                <constraint firstItem="5Bd-Qk-pKi" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="UQY-eH-e6L" secondAttribute="trailing" constant="221" id="OvD-pR-bcC"/>
                                                 <constraint firstItem="2rt-wE-Ngg" firstAttribute="top" secondItem="bOI-nw-49t" secondAttribute="top" id="Uhn-55-yYe"/>
                                                 <constraint firstItem="Slj-cP-BpI" firstAttribute="top" secondItem="ZZq-X1-MrD" secondAttribute="bottom" constant="5" id="XAC-a6-bHS"/>
                                                 <constraint firstItem="S0b-6a-HIW" firstAttribute="centerX" secondItem="2rt-wE-Ngg" secondAttribute="centerX" id="XAZ-UQ-d5c"/>
@@ -219,25 +229,44 @@ de vie privé.</string>
                                                 <constraint firstItem="o6y-Wk-Ifh" firstAttribute="leading" secondItem="2rt-wE-Ngg" secondAttribute="trailing" constant="47" id="p7L-OV-8fe"/>
                                                 <constraint firstItem="o6y-Wk-Ifh" firstAttribute="top" secondItem="bOI-nw-49t" secondAttribute="top" id="r1f-By-tQX"/>
                                                 <constraint firstItem="S0b-6a-HIW" firstAttribute="top" secondItem="2rt-wE-Ngg" secondAttribute="bottom" id="svV-TE-Yic"/>
+                                                <constraint firstAttribute="bottom" secondItem="5WU-MQ-Mu6" secondAttribute="bottom" id="vdF-Hz-cV3"/>
                                                 <constraint firstItem="bOI-nw-49t" firstAttribute="top" secondItem="frf-Eo-3ZZ" secondAttribute="topMargin" constant="10" id="vz6-th-im6"/>
+                                                <constraint firstAttribute="trailing" secondItem="5WU-MQ-Mu6" secondAttribute="trailing" id="xU7-M8-mNg"/>
                                                 <constraint firstItem="bOI-nw-49t" firstAttribute="leading" secondItem="frf-Eo-3ZZ" secondAttribute="leadingMargin" id="yex-Sd-Mzw"/>
                                                 <constraint firstItem="ZZq-X1-MrD" firstAttribute="trailing" secondItem="frf-Eo-3ZZ" secondAttribute="trailingMargin" id="zm3-ts-wRt"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ProfileNetworkCellIdentifier" rowHeight="145" id="lxP-z6-ExR" customClass="NetworkTableViewCell" customModule="Youmee" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="218" width="375" height="145"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ProfileNetworkCellIdentifier" rowHeight="167" id="lxP-z6-ExR" customClass="NetworkTableViewCell" customModule="Youmee" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="218" width="375" height="167"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lxP-z6-ExR" id="oFA-cc-yr7">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="144.5"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lxP-z6-ExR" id="oFA-cc-yr7">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="167"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Ue8-fa-zzc">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="130"/>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gDS-u7-wnj">
+                                                    <rect key="frame" x="15" y="11" width="345" height="40"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Social Network" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gvl-1R-UNT">
+                                                            <rect key="frame" x="0.0" y="10.5" width="114" height="19.5"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="130" id="4dT-Ap-RE3"/>
-                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="96" id="cXx-4Z-wUo"/>
+                                                        <constraint firstAttribute="trailing" secondItem="gvl-1R-UNT" secondAttribute="trailing" constant="231" id="RV3-9S-wBU"/>
+                                                        <constraint firstAttribute="height" constant="40" id="fad-BI-Crm"/>
+                                                        <constraint firstItem="gvl-1R-UNT" firstAttribute="leading" relation="lessThanOrEqual" secondItem="gDS-u7-wnj" secondAttribute="leading" id="rqH-Mq-pTn"/>
+                                                        <constraint firstItem="gvl-1R-UNT" firstAttribute="centerY" secondItem="gDS-u7-wnj" secondAttribute="centerY" id="xFS-t5-Tja"/>
+                                                    </constraints>
+                                                </view>
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Ue8-fa-zzc">
+                                                    <rect key="frame" x="0.0" y="51" width="375" height="91"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="91" id="OTG-rj-1l4"/>
                                                     </constraints>
                                                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="5" id="sZU-34-8xg">
                                                         <size key="itemSize" width="98" height="84"/>
@@ -247,20 +276,20 @@ de vie privé.</string>
                                                     </collectionViewFlowLayout>
                                                     <cells>
                                                         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="NetworkCellIdentifier" id="h7e-82-Hf8" customClass="NetworkCollectionViewCell" customModule="Youmee" customModuleProvider="target">
-                                                            <rect key="frame" x="30" y="23" width="98" height="84"/>
+                                                            <rect key="frame" x="30" y="3.5" width="98" height="84"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                                                 <rect key="frame" x="0.0" y="0.0" width="98" height="84"/>
                                                                 <autoresizingMask key="autoresizingMask"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Network" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zfU-Wc-ZKB">
-                                                                        <rect key="frame" x="0.0" y="67" width="98" height="17"/>
+                                                                        <rect key="frame" x="0.0" y="65" width="98" height="17"/>
                                                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Item_location_pin" translatesAutoresizingMaskIntoConstraints="NO" id="U3Q-zd-gQb">
-                                                                        <rect key="frame" x="27" y="20" width="44" height="40"/>
+                                                                        <rect key="frame" x="35" y="20" width="44" height="40"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="40" id="0YC-rR-KtG"/>
                                                                             <constraint firstAttribute="width" constant="44" id="gHj-OE-hyz"/>
@@ -269,11 +298,11 @@ de vie privé.</string>
                                                                 </subviews>
                                                             </view>
                                                             <constraints>
-                                                                <constraint firstAttribute="bottom" secondItem="zfU-Wc-ZKB" secondAttribute="bottom" id="ANp-P6-2hX"/>
                                                                 <constraint firstAttribute="trailing" secondItem="zfU-Wc-ZKB" secondAttribute="trailing" id="feq-xp-kYb"/>
-                                                                <constraint firstItem="U3Q-zd-gQb" firstAttribute="centerX" secondItem="zfU-Wc-ZKB" secondAttribute="centerX" id="jdy-KV-rVf"/>
+                                                                <constraint firstItem="U3Q-zd-gQb" firstAttribute="leading" secondItem="h7e-82-Hf8" secondAttribute="leadingMargin" constant="19" id="hbt-zB-6fJ"/>
                                                                 <constraint firstItem="zfU-Wc-ZKB" firstAttribute="leading" secondItem="h7e-82-Hf8" secondAttribute="leading" id="n3x-4t-VSy"/>
                                                                 <constraint firstItem="U3Q-zd-gQb" firstAttribute="top" secondItem="h7e-82-Hf8" secondAttribute="topMargin" id="o9y-rd-PFT"/>
+                                                                <constraint firstItem="zfU-Wc-ZKB" firstAttribute="top" secondItem="U3Q-zd-gQb" secondAttribute="bottom" constant="5" id="pYX-oY-8wp"/>
                                                             </constraints>
                                                             <connections>
                                                                 <outlet property="networkImage" destination="U3Q-zd-gQb" id="Rj3-Sj-cV6"/>
@@ -282,12 +311,25 @@ de vie privé.</string>
                                                         </collectionViewCell>
                                                     </cells>
                                                 </collectionView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xx6-vS-8Ey">
+                                                    <rect key="frame" x="0.0" y="162" width="375" height="5"/>
+                                                    <color key="backgroundColor" red="0.84997694479999997" green="0.86363461770000005" blue="0.88112337119999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="5" id="Roz-jB-XsQ"/>
+                                                    </constraints>
+                                                </view>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="Ue8-fa-zzc" firstAttribute="top" secondItem="oFA-cc-yr7" secondAttribute="top" id="L7b-ig-L6A"/>
-                                                <constraint firstAttribute="trailing" secondItem="Ue8-fa-zzc" secondAttribute="trailing" id="X06-vV-xHg"/>
-                                                <constraint firstItem="Ue8-fa-zzc" firstAttribute="leading" secondItem="oFA-cc-yr7" secondAttribute="leading" id="bYY-vI-hYD"/>
-                                                <constraint firstAttribute="bottom" secondItem="Ue8-fa-zzc" secondAttribute="bottom" id="bfd-KK-UVG"/>
+                                                <constraint firstAttribute="bottom" secondItem="Xx6-vS-8Ey" secondAttribute="bottom" id="56f-vw-Fh6"/>
+                                                <constraint firstItem="gDS-u7-wnj" firstAttribute="top" secondItem="oFA-cc-yr7" secondAttribute="topMargin" id="CAO-pX-3mS"/>
+                                                <constraint firstItem="Xx6-vS-8Ey" firstAttribute="leading" secondItem="oFA-cc-yr7" secondAttribute="leading" id="Pxa-da-NDo"/>
+                                                <constraint firstItem="gDS-u7-wnj" firstAttribute="leading" secondItem="oFA-cc-yr7" secondAttribute="leadingMargin" id="T8z-ON-SiR"/>
+                                                <constraint firstAttribute="trailing" secondItem="Xx6-vS-8Ey" secondAttribute="trailing" id="XwT-qx-IX5"/>
+                                                <constraint firstItem="Ue8-fa-zzc" firstAttribute="top" secondItem="gDS-u7-wnj" secondAttribute="bottom" id="fAF-oP-xdJ"/>
+                                                <constraint firstAttribute="trailing" secondItem="Ue8-fa-zzc" secondAttribute="trailing" id="n5d-jy-JRU"/>
+                                                <constraint firstItem="Xx6-vS-8Ey" firstAttribute="top" secondItem="Ue8-fa-zzc" secondAttribute="bottom" constant="20" id="qRI-7y-Znd"/>
+                                                <constraint firstItem="Ue8-fa-zzc" firstAttribute="leading" secondItem="oFA-cc-yr7" secondAttribute="leading" id="rU1-g0-1a9"/>
+                                                <constraint firstItem="gDS-u7-wnj" firstAttribute="trailing" secondItem="oFA-cc-yr7" secondAttribute="trailingMargin" id="rcE-LY-0aH"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>

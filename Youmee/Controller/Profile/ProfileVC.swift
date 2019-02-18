@@ -11,7 +11,6 @@ import UIKit
 class ProfileVC: UIViewController {
 
     @IBOutlet weak var profilTableView: UITableView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         profilTableView.rowHeight = UITableView.automaticDimension
@@ -33,16 +32,18 @@ extension ProfileVC :UITableViewDataSource{
         let row = indexPath.row
         if row == 0{
             let cell = tableView.dequeueReusableCell(withIdentifier: "ProfileInformationCellIdentifier") as! ProfileInformationCell
+            cell.selectionStyle = .none
+            return cell
+        }
+        if row == 1{
+            let cell = tableView.dequeueReusableCell(withIdentifier: "ProfileNetworkCellIdentifier") as! NetworkTableViewCell
             return cell
         }
         else{
-            let cell = tableView.dequeueReusableCell(withIdentifier: "ProfileNetworkCellIdentifier") as! NetworkTableViewCell
-            return cell
+            return UITableViewCell()
         }
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
     }
-}
-extension ProfileVC : UITableViewDelegate{
 }

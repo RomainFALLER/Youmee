@@ -19,6 +19,9 @@ class ProfileInformationCell: UITableViewCell {
     @IBOutlet weak var cityLabel: UILabel!
     @IBOutlet weak var userImage: UIImageView!
     
+    @IBAction func updateProfileDidTap(_ sender: Any) {
+        print("update Profil Did tap")
+    }
     override func awakeFromNib() {
         super.awakeFromNib()
         fillingWithUserInformation()
@@ -26,8 +29,8 @@ class ProfileInformationCell: UITableViewCell {
     }
     private func fillingWithUserInformation(){
         usernameLabel.text = user.username
-        let age = userservice.calcAge(birthday: user.birthday)
-        ageLabel.text = String(age)
+        let age = String(userservice.calcAge(birthday: user.birthday))
+        ageLabel.text = "\(age) ans"
         bioLabel.text = user.bio
         cityLabel.text = user.city
         userImage.image = UIImage(named: user.photo)

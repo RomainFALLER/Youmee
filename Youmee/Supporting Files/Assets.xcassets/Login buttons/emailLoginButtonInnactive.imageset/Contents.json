@@ -2,17 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "facebookTest.png",
+      "filename" : "emailLoginButton.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "facebookTest@2x.png",
+      "filename" : "emailLoginButton-1.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "facebookTest@3x.png",
+      "filename" : "emailLoginButton-2.png",
       "scale" : "3x"
     }
   ],

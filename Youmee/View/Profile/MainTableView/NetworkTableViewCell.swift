@@ -8,14 +8,17 @@
 
 import UIKit
 
-class NetworkTableViewCell: UITableViewCell {
+class NetworkTableViewCell: UITableViewCell{
 
     @IBOutlet weak var networkcollectionView: UICollectionView!
+    @IBOutlet weak var collectionViewHeight: NSLayoutConstraint!
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        collectionViewHeight.constant = 20
         self.networkcollectionView.dataSource = self
         self.networkcollectionView.delegate = self
+//        networkcollectionView.bounds.height = (networkcollectionView.bounds.width/3) * 2 + 10
 
     }
 
@@ -36,7 +39,27 @@ extension NetworkTableViewCell: UICollectionViewDataSource,UICollectionViewDeleg
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "NetworkCellIdentifier", for: indexPath) as? NetworkCollectionViewCell else {
             return UICollectionViewCell()
         }
-        cell.configure(image: netWorkList[indexPath.row], networkName: netWorkList[indexPath.row])
+        cell.configure(image: netWorkList[indexPath.row])
         return cell
     }
+}
+extension NetworkTableViewCell: UICollectionViewDelegateFlowLayout{
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let yourWidth = collectionView.bounds.width/3.0 - 1
+        let yourHeight = yourWidth
+        
+        return CGSize(width: yourWidth, height: yourHeight)
+    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets.zero
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 1
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 1
+    }
+
 }

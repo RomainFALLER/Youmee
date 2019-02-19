@@ -8,17 +8,15 @@
 
 import UIKit
 
-class NetworkCollectionViewCell: UICollectionViewCell {
+class NetworkCollectionViewCell: UICollectionViewCell  {
+
     
     @IBOutlet weak var networkImage: UIImageView!
     
-    @IBOutlet weak var networkNameLabel: UILabel!
     override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+        super.awakeFromNib()        
     }
-    func configure(image: String, networkName: String){
+    func configure(image: String){
         networkImage.image = UIImage(named: "\(image)")
-        networkNameLabel.text = networkName
     }
 }

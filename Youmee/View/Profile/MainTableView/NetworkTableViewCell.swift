@@ -11,6 +11,7 @@ import UIKit
 class NetworkTableViewCell: UITableViewCell{
 
     @IBOutlet weak var networkcollectionView: UICollectionView!
+    
     @IBOutlet weak var collectionViewHeight: NSLayoutConstraint!
     
     override func awakeFromNib() {
@@ -44,6 +45,7 @@ extension NetworkTableViewCell: UICollectionViewDataSource,UICollectionViewDeleg
     }
 }
 extension NetworkTableViewCell: UICollectionViewDelegateFlowLayout{
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let yourWidth = collectionView.bounds.width/3.0 - 1
         let yourHeight = yourWidth

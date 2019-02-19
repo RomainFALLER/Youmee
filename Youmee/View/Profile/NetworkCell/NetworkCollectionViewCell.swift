@@ -17,6 +17,8 @@ class NetworkCollectionViewCell: UICollectionViewCell  {
         super.awakeFromNib()        
     }
     func configure(image: String){
+
         networkImage.image = UIImage(named: "\(image)")
+        
     }
 }

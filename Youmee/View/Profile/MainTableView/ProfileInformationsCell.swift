@@ -24,8 +24,16 @@ class ProfileInformationCell: UITableViewCell {
     }
     override func awakeFromNib() {
         super.awakeFromNib()
+        makeCirculaImageProfil()
         fillingWithUserInformation()
 
+    }
+    private func makeCirculaImageProfil(){
+        userImage.layer.borderWidth = 0.5
+        userImage.layer.masksToBounds = false
+        userImage.layer.borderColor = UIColor.black.cgColor
+        userImage.layer.cornerRadius = userImage.frame.height/2
+        userImage.clipsToBounds = true
     }
     private func fillingWithUserInformation(){
         usernameLabel.text = user.username

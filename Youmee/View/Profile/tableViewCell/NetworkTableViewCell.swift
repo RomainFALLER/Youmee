@@ -19,7 +19,6 @@ class NetworkTableViewCell: UITableViewCell{
         collectionViewHeight.constant = 20
         self.networkcollectionView.dataSource = self
         self.networkcollectionView.delegate = self
-//        networkcollectionView.bounds.height = (networkcollectionView.bounds.width/3) * 2 + 10
 
     }
 
@@ -63,5 +62,4 @@ extension NetworkTableViewCell: UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 1
     }
-
 }

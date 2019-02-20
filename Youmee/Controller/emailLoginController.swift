@@ -28,6 +28,7 @@ class emailLoginController : UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func editingChanged(_ sender: UITextField) {
+        
         if (sender.text == "roro")
         {
             emailLoginButton.isEnabled=true

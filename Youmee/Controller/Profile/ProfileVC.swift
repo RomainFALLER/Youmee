@@ -25,7 +25,7 @@ extension ProfileVC :UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return 4
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let row = indexPath.row
@@ -40,7 +40,18 @@ extension ProfileVC :UITableViewDataSource{
             cell.frame = tableView.bounds
             cell.layoutIfNeeded()
             cell.networkcollectionView.reloadData()
-            cell.collectionViewHeight.constant = (cell.bounds.width/3) * 2 
+            cell.collectionViewHeight.constant = (cell.bounds.width/3) * 2
+            return cell
+        }
+        if row == 2{
+            print("je creer la section")
+            let cell = tableView.dequeueReusableCell(withIdentifier: "profileVisitedPlaceCellIdentifier") as! LastVisitedPlaceTableViewCell
+            
+            cell.frame = tableView.bounds
+            cell.layoutIfNeeded()
+            cell.lastVisitedPlaceCollectionView.reloadData()
+            cell.collectionViewHeight.constant = (cell.bounds.width/2) * 4
+            
             return cell
         }
         else{

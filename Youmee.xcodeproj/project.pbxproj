@@ -331,12 +331,20 @@
 		50D5B1802219B3DF001251E3 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				50FFA9B4221DFF4D00FC803E /* Login */,
 				14BE6C36221A043600FD0BA2 /* Profile */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		50FFA9B4221DFF4D00FC803E /* Login */ = {
+			isa = PBXGroup;
+			children = (
 				50D5B17E2219B3D9001251E3 /* facebookLoginController.swift */,
 				50D5B183221A0FA7001251E3 /* emailLoginController.swift */,
 				50D5B185221A0FB8001251E3 /* phoneLoginController.swift */,
 			);
-			path = Controller;
+			path = Login;
 			sourceTree = "<group>";
 		};
 		D3FC66D6EE302C29BB8AEB34 /* Pods */ = {

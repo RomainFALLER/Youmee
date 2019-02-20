@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14629444221E014B00A47042 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14629443221E014B00A47042 /* Font.swift */; };
 		14BE6C0D2218C92B00FD0BA2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BE6C0C2218C92B00FD0BA2 /* User.swift */; };
 		14BE6C322219FDF900FD0BA2 /* buttonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BE6C312219FDF900FD0BA2 /* buttonExtension.swift */; };
 		14BE6C35221A036500FD0BA2 /* ProfileInformationsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BE6C34221A036500FD0BA2 /* ProfileInformationsCell.swift */; };
@@ -55,6 +56,7 @@
 
 /* Begin PBXFileReference section */
 		016006CCFDD7D5AC6308E26A /* Pods-YoumeeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YoumeeTests.release.xcconfig"; path = "Target Support Files/Pods-YoumeeTests/Pods-YoumeeTests.release.xcconfig"; sourceTree = "<group>"; };
+		14629443221E014B00A47042 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		14BE6C0C2218C92B00FD0BA2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		14BE6C312219FDF900FD0BA2 /* buttonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buttonExtension.swift; sourceTree = "<group>"; };
 		14BE6C34221A036500FD0BA2 /* ProfileInformationsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInformationsCell.swift; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				14BE6C312219FDF900FD0BA2 /* buttonExtension.swift */,
+				14629443221E014B00A47042 /* Font.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -606,6 +609,7 @@
 				14BE6C3B221A04D100FD0BA2 /* ProfileVC.swift in Sources */,
 				14BE6C47221B246800FD0BA2 /* NetworkStatus.swift in Sources */,
 				14BE6C55221DB8BB00FD0BA2 /* VisitedPlaceCollectionViewCell.swift in Sources */,
+				14629444221E014B00A47042 /* Font.swift in Sources */,
 				14BE6C4D221B4C7100FD0BA2 /* NetworkService.swift in Sources */,
 				14BE6C35221A036500FD0BA2 /* ProfileInformationsCell.swift in Sources */,
 				50D5B186221A0FB8001251E3 /* phoneLoginController.swift in Sources */,

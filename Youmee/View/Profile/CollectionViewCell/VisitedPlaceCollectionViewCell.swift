@@ -22,6 +22,7 @@ class VisitedPlaceCollectionViewCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        title.font = UIFont.avenirNext(ofSize: 20)
     }
     func configure(myImage: String,myTitle: String,mySubtitle: String,myNumberOfLike: String){
         image.image = UIImage(named: myImage)

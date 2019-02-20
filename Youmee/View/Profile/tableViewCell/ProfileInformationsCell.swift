@@ -39,6 +39,7 @@ class ProfileInformationCell: UITableViewCell {
         usernameLabel.text = user.username
         let age = String(userservice.calcAge(birthday: user.birthday))
         ageLabel.text = "\(age) ans"
+        bioLabel.font = UIFont.textFont()
         bioLabel.text = user.bio
         cityLabel.text = user.city
         userImage.image = UIImage(named: user.photo)

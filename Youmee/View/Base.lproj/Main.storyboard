@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DMi-wP-37u">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="e19-vf-kUY">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -88,13 +88,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Se connecter avec une adresse e-mail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wE7-gl-ait">
-                                <rect key="frame" x="69" y="128" width="238" height="22"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="16"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Se connecter avec une adresse e-mail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wE7-gl-ait">
+                                <rect key="frame" x="69" y="127.99999999999999" width="238" height="20.333333333333329"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Votre adresse e-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MoD-t8-4L4">
-                                <rect key="frame" x="37" y="210" width="301" height="22"/>
+                                <rect key="frame" x="37" y="208.33333333333334" width="301" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="jb2-gR-t75"/>
                                 </constraints>
@@ -117,9 +117,9 @@
                                     <outlet property="delegate" destination="0JZ-QF-h2M" id="Yfj-0a-Fjj"/>
                                 </connections>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nous allons vous envoyer un lien permettant de vous connecter." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bCe-i9-SjG">
-                                <rect key="frame" x="37" y="240" width="282" height="16"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="11"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nous allons vous envoyer un lien permettant de vous connecter." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bCe-i9-SjG">
+                                <rect key="frame" x="37" y="238.33333333333334" width="282" height="20.333333333333343"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -132,7 +132,7 @@
                                 <state key="normal" backgroundImage="backButton"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Awn-2D-nxX">
-                                <rect key="frame" x="85" y="273" width="204" height="52"/>
+                                <rect key="frame" x="85" y="275.66666666666669" width="204" height="52"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Awn-2D-nxX" secondAttribute="height" multiplier="51:13" id="Ypw-Ua-wqy"/>
                                 </constraints>
@@ -175,20 +175,96 @@
             </objects>
             <point key="canvasLocation" x="618.39999999999998" y="798.76847290640399"/>
         </scene>
-        <!--Email Login Controller-->
+        <!--Phone Login Controller-->
         <scene sceneID="MCy-rQ-eOf">
             <objects>
-                <viewController id="e19-vf-kUY" customClass="emailLoginController" customModule="Youmee" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="e19-vf-kUY" customClass="phoneLoginController" customModule="Youmee" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="urA-vy-MaM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="649696937" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g6g-Z5-mN2">
+                                <rect key="frame" x="144" y="177" width="185" height="17"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="editingChanged:" destination="e19-vf-kUY" eventType="editingChanged" id="jyK-NT-QER"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="33" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4nq-Y1-5C2">
+                                <rect key="frame" x="45" y="177" width="80" height="17"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Se connecter avec un numéro de téléphone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aN0-Ei-V5X">
+                                <rect key="frame" x="45" y="113" width="284" height="20"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VTW-Yh-tOu">
+                                <rect key="frame" x="28" y="57" width="27" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="a6a-Vb-zZu"/>
+                                    <constraint firstAttribute="width" constant="27" id="zNO-mM-Ygk"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="backButton"/>
+                                <connections>
+                                    <action selector="backButtonDidTap:" destination="e19-vf-kUY" eventType="touchUpInside" id="hew-Tf-GYm"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Axr-Fj-4zA">
+                                <rect key="frame" x="47" y="211" width="282" height="75.333333333333314"/>
+                                <string key="text">Appuyez sur Suivant pour obtenir une confirmation texte d'Account Kit par Facebook. Tinder utilise la technologie Facebook pour vous aider à vous connecter mais vous n'avez pas besoin de compte Facebook. Hors coût de connexion de messagerie. </string>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="11"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WBX-tJ-voZ">
+                                <rect key="frame" x="132" y="294" width="110" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="WBX-tJ-voZ" secondAttribute="height" multiplier="110:51" id="PTy-PC-c0C"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="phoneNextButtonInnactive"/>
+                                <connections>
+                                    <action selector="phoneNextButtonDidTap:" destination="e19-vf-kUY" eventType="touchUpInside" id="QqM-Oa-q91"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="g6g-Z5-mN2" firstAttribute="top" secondItem="aN0-Ei-V5X" secondAttribute="bottom" constant="44" id="13G-tH-g8j"/>
+                            <constraint firstItem="bu7-yd-xFV" firstAttribute="trailing" secondItem="Axr-Fj-4zA" secondAttribute="trailing" constant="46" id="2pE-jK-3Li"/>
+                            <constraint firstItem="VTW-Yh-tOu" firstAttribute="top" secondItem="bu7-yd-xFV" secondAttribute="top" constant="13" id="5F0-2s-Xd9"/>
+                            <constraint firstItem="aN0-Ei-V5X" firstAttribute="top" secondItem="VTW-Yh-tOu" secondAttribute="bottom" constant="22" id="8mR-YJ-aRC"/>
+                            <constraint firstItem="VTW-Yh-tOu" firstAttribute="leading" secondItem="bu7-yd-xFV" secondAttribute="leading" constant="28" id="9hQ-zn-qKx"/>
+                            <constraint firstItem="WBX-tJ-voZ" firstAttribute="leading" secondItem="bu7-yd-xFV" secondAttribute="leading" constant="132" id="E92-Xd-X6z"/>
+                            <constraint firstItem="Axr-Fj-4zA" firstAttribute="leading" secondItem="bu7-yd-xFV" secondAttribute="leading" constant="47" id="H1Q-L7-ius"/>
+                            <constraint firstItem="aN0-Ei-V5X" firstAttribute="leading" secondItem="bu7-yd-xFV" secondAttribute="leading" constant="45" id="Joq-rH-jMe"/>
+                            <constraint firstItem="bu7-yd-xFV" firstAttribute="trailing" secondItem="4nq-Y1-5C2" secondAttribute="trailing" constant="250" id="Q6K-to-iqD"/>
+                            <constraint firstItem="g6g-Z5-mN2" firstAttribute="leading" secondItem="bu7-yd-xFV" secondAttribute="leading" constant="144" id="QIC-jD-K94"/>
+                            <constraint firstItem="WBX-tJ-voZ" firstAttribute="top" secondItem="Axr-Fj-4zA" secondAttribute="bottom" constant="7.6699999999999999" id="QjU-Kr-QuX"/>
+                            <constraint firstItem="4nq-Y1-5C2" firstAttribute="top" secondItem="aN0-Ei-V5X" secondAttribute="bottom" constant="44" id="kDp-Ht-Ljv"/>
+                            <constraint firstItem="bu7-yd-xFV" firstAttribute="trailing" secondItem="g6g-Z5-mN2" secondAttribute="trailing" constant="46" id="kzt-76-2JE"/>
+                            <constraint firstItem="bu7-yd-xFV" firstAttribute="trailing" secondItem="WBX-tJ-voZ" secondAttribute="trailing" constant="133" id="nyp-Fx-mw3"/>
+                            <constraint firstItem="Axr-Fj-4zA" firstAttribute="top" secondItem="g6g-Z5-mN2" secondAttribute="bottom" constant="17" id="oGc-s0-ee9"/>
+                            <constraint firstItem="4nq-Y1-5C2" firstAttribute="leading" secondItem="bu7-yd-xFV" secondAttribute="leading" constant="45" id="p4u-dd-OfF"/>
+                            <constraint firstItem="bu7-yd-xFV" firstAttribute="trailing" secondItem="aN0-Ei-V5X" secondAttribute="trailing" constant="46" id="rjY-y0-ezP"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="bu7-yd-xFV"/>
                     </view>
+                    <connections>
+                        <outlet property="phoneCountryIndicatorTextField" destination="4nq-Y1-5C2" id="u4A-sG-mK4"/>
+                        <outlet property="phoneInformationsLabel" destination="Axr-Fj-4zA" id="0Q5-qe-wom"/>
+                        <outlet property="phoneLoginLabel" destination="aN0-Ei-V5X" id="ylv-7w-lRa"/>
+                        <outlet property="phoneNextButton" destination="WBX-tJ-voZ" id="6dn-Z6-fJ2"/>
+                        <outlet property="phoneNumberTextField" destination="g6g-Z5-mN2" id="Xjp-gS-pMc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="utJ-lM-3HN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="619" y="-633"/>
+            <point key="canvasLocation" x="618.39999999999998" y="-633.25123152709364"/>
         </scene>
         <!--Chat-->
         <scene sceneID="0Qt-0f-vqu">
@@ -703,5 +779,6 @@
         <image name="heart_icon" width="128" height="120"/>
         <image name="more_icon" width="128" height="32"/>
         <image name="phoneLoginButton" width="1360" height="300"/>
+        <image name="phoneNextButtonInnactive" width="700" height="350"/>
     </resources>
 </document>

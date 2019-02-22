@@ -19,7 +19,17 @@ class emailLoginController : UIViewController, UITextFieldDelegate {
         dismiss(animated: true, completion: nil)
     }
     
-    
+    @IBAction func editingChanged(_ sender: UITextField) {
+        if (isValidEmail(testStr: sender.text ?? ""))
+        {
+            emailLoginButton.isEnabled=true
+            emailLoginButton.setBackgroundImage(UIImage(named: "emailLoginButtonActive"), for: .normal)
+        } else
+        {
+            emailLoginButton.isEnabled=false
+            emailLoginButton.setBackgroundImage(UIImage(named: "emailLoginButtonInnactive"), for: .normal)
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,18 +41,6 @@ class emailLoginController : UIViewController, UITextFieldDelegate {
     
     override func viewDidAppear(_ animated: Bool) {
         emailTextField.becomeFirstResponder()
-    }
-    
-    @IBAction func editingChanged(_ sender: UITextField) {
-        if (isValidEmail(testStr: sender.text ?? ""))
-        {
-            emailLoginButton.isEnabled=true
-            emailLoginButton.setBackgroundImage(UIImage(named: "emailLoginButtonActive"), for: .normal)
-        } else
-        {
-            emailLoginButton.isEnabled=false
-            emailLoginButton.setBackgroundImage(UIImage(named: "emailLoginButtonInnactive"), for: .normal)
-        }
     }
     
     // Method to validate if the string enterred is an email format

@@ -18,6 +18,16 @@ class phoneLoginController : UIViewController, UITextFieldDelegate {
         dismiss(animated: true, completion: nil)
     }
     
+    
+    @IBAction func editingChanged(_ sender: Any) {
+        if (isValidPhone(testStr: phoneNumberTextField.text ?? "")) {
+            
+        } else {
+            
+        }
+    
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setBottomBorderToTextFields(myTextField: phoneNumberTextField)
@@ -27,6 +37,13 @@ class phoneLoginController : UIViewController, UITextFieldDelegate {
     
     override func viewDidAppear(_ animated: Bool) {
         phoneNumberTextField.becomeFirstResponder()
+    }
+    
+    // Method to validate if the string enterred is an email format
+    func isValidPhone(testStr:String) -> Bool {
+        let phoneRegEx = "^\\d{3}-\\d{3}-\\d{4}$"
+        let phoneTest = NSPredicate(format:"SELF MATCHES %@", phoneRegEx)
+        return phoneTest.evaluate(with: testStr)
     }
     
     // Method to set the bottom border to the text field

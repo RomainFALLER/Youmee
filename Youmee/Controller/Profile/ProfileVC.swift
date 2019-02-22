@@ -10,9 +10,10 @@ import UIKit
 
 class ProfileVC: UIViewController {
     @IBOutlet weak var profilTableView: UITableView!
-    
+    var user = User(id: "1", username: "wdyben", photo: "Facebook", email: "benoitfagot@gmail.com", bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras at mollis lorem, sed elementum ex. Morbi sagittis quam quis dolor porta, eget sollicitudin lorem laoreet. In et interdum nunc. Nam sem orci, pellentesque nec egestas sit .", birthday: "31/12/1994", phoneNum: "",ville: "Paris",networks: NetworkService.shared.initArrayOfNetwork(),visitedPlaces: [VisitedPLace(),VisitedPLace(),VisitedPLace(),VisitedPLace()])
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         profilTableView.rowHeight = UITableView.automaticDimension
         profilTableView.estimatedRowHeight = 1000
         profilTableView.reloadData()
@@ -33,20 +34,21 @@ extension ProfileVC :UITableViewDataSource{
         if row == 0{
             let cell = tableView.dequeueReusableCell(withIdentifier: "ProfileInformationCellIdentifier") as! ProfileInformationCell
             cell.selectionStyle = .none
+            cell.configureUser(myUser: user)
             return cell
         }
-        if row == 1{
+        else if row == 1{
             let cell = tableView.dequeueReusableCell(withIdentifier: "ProfileNetworkCellIdentifier") as! NetworkTableViewCell
+            cell.configureUser(myUser: user)
             cell.frame = tableView.bounds
             cell.layoutIfNeeded()
             cell.networkcollectionView.reloadData()
             cell.collectionViewHeight.constant = (cell.bounds.width/3) * 2
             return cell
         }
-        if row == 2{
-            print("je creer la section")
+        else if row == 2{
             let cell = tableView.dequeueReusableCell(withIdentifier: "profileVisitedPlaceCellIdentifier") as! LastVisitedPlaceTableViewCell
-            
+            cell.configureUser(myUser: user)
             cell.frame = tableView.bounds
             cell.layoutIfNeeded()
             cell.lastVisitedPlaceCollectionView.reloadData()

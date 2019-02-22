@@ -11,25 +11,38 @@ import UIKit
 class VisitedPlaceCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var image: UIImageView!
-    
     @IBOutlet weak var title: UILabel!
-
     @IBOutlet weak var subtitle: UILabel!
     @IBOutlet weak var likeButton: UIButton!
     @IBOutlet weak var moreButton: UIButton!
-    
     @IBOutlet weak var numberOfLike: UILabel!
+    
+    var likeButtonIsTap: Bool!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        title.font = UIFont.avenirNext(ofSize: 20)
     }
-    func configure(myImage: String,myTitle: String,mySubtitle: String,myNumberOfLike: String){
+    func configure(myImage: String,myTitle: String,mySubtitle: String,myNumberOfLike: Int, ImageIsLike: Bool){
         image.image = UIImage(named: myImage)
         title.text = myTitle
         subtitle.text = mySubtitle
-        numberOfLike.text = myNumberOfLike
+        numberOfLike.text = "\(myNumberOfLike)"
+        likeButtonIsTap = ImageIsLike
     }
     @IBAction func likeButtonDidTap(_ sender: Any) {
+        switchLikeButton()
     }
+    private func switchLikeButton(){
+        if likeButtonIsTap == false{
+            numberOfLike.text = "\(Int(numberOfLike.text!)! + 1)"
+            likeButton.setBackgroundImage(UIImage(named: "heart_icon_is_tap"), for: .normal)
+            likeButtonIsTap = true
+        }
+        else {
+            likeButton.setBackgroundImage(UIImage(named: "heart_icon"), for: .normal)
+            numberOfLike.text = "\(Int(numberOfLike.text!)! - 1)"
+            likeButtonIsTap = false
+        }
+    }
+    
 }

@@ -10,7 +10,7 @@ import UIKit
 
 class ProfileInformationCell: UITableViewCell {
     
-    let user = User(id: "1", username: "wdyben", photo: "Facebook", email: "benoitfagot@gmail.com", bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras at mollis lorem, sed elementum ex. Morbi sagittis quam quis dolor porta, eget sollicitudin lorem laoreet. In et interdum nunc. Nam sem orci, pellentesque nec egestas sit .", birthday: "31/12/1994", phoneNum: "",ville: "Paris",networks: NetworkService.shared.initArrayOfNetwork())
+
     let userservice = UserService()
 
     @IBOutlet weak var usernameLabel: UILabel!
@@ -18,16 +18,17 @@ class ProfileInformationCell: UITableViewCell {
     @IBOutlet weak var bioLabel: UILabel!
     @IBOutlet weak var cityLabel: UILabel!
     @IBOutlet weak var userImage: UIImageView!
-    
+    var user: User!
     @IBAction func updateProfileDidTap(_ sender: Any) {
-        print("update Profil Did tap")
+        print("Edit Profil Did tap")
+        
+        
     }
     override func awakeFromNib() {
         super.awakeFromNib()
+        applyfont()
         makeCirculaImageProfil()
-        fillingWithUserInformation()
-
-    }
+        }
     private func makeCirculaImageProfil(){
         userImage.layer.borderWidth = 0.5
         userImage.layer.masksToBounds = false
@@ -39,7 +40,6 @@ class ProfileInformationCell: UITableViewCell {
         usernameLabel.text = user.username
         let age = String(userservice.calcAge(birthday: user.birthday))
         ageLabel.text = "\(age) ans"
-        bioLabel.font = UIFont.textFont()
         bioLabel.text = user.bio
         cityLabel.text = user.city
         userImage.image = UIImage(named: user.photo)
@@ -49,5 +49,15 @@ class ProfileInformationCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
+    private func applyfont(){
+        
+        usernameLabel.font = UIFont.fontWithStyle(ofSize: 20, font: .AvenirNext, style: .Bold)
+        ageLabel.font = UIFont.textFont()
+        bioLabel.font = UIFont.textFont()
+        cityLabel.font = UIFont.textFont()
+    }
+    func configureUser(myUser: User){
+        user = myUser
+        fillingWithUserInformation()
+    }
 }

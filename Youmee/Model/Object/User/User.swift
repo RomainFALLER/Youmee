@@ -19,8 +19,9 @@ class User{
     var phoneNum: String
     var city: String
     var networks: [Network]
+    var visitedPlaces: [VisitedPLace]
 
-    init(id: String, username: String, photo: String, email: String, bio: String, birthday: String, phoneNum: String,ville:String,networks: [Network])
+    init(id: String, username: String, photo: String, email: String, bio: String, birthday: String, phoneNum: String,ville:String,networks: [Network],visitedPlaces: [VisitedPLace])
     {
         self.user_id = id
         self.username = username
@@ -31,8 +32,10 @@ class User{
         self.phoneNum = phoneNum
         self.city = ville
         self.networks = networks
+        self.visitedPlaces = visitedPlaces
+        
     }
     convenience init() {
-        self.init(id: "",username: "", photo: "", email: "", bio: "", birthday: "", phoneNum: "",ville: "",networks: NetworkService.shared.initArrayOfNetwork())
+        self.init(id: "",username: "", photo: "", email: "", bio: "", birthday: "", phoneNum: "",ville: "",networks: NetworkService.shared.initArrayOfNetwork(),visitedPlaces: [])
     }
 }

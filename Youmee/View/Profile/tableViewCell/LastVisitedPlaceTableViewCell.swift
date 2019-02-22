@@ -13,7 +13,7 @@ class LastVisitedPlaceTableViewCell: UITableViewCell {
     @IBOutlet weak var lastVisitedPlaceCollectionView: UICollectionView!
     
    @IBOutlet weak var collectionViewHeight: NSLayoutConstraint!
-    
+    var user: User!
     override func awakeFromNib() {
         super.awakeFromNib()
         collectionViewHeight.constant = 20
@@ -25,6 +25,9 @@ class LastVisitedPlaceTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    func configureUser(myUser: User){
+        user = myUser
     }
 
 }
@@ -38,7 +41,10 @@ extension LastVisitedPlaceTableViewCell: UICollectionViewDataSource,UICollection
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "visitedPlaceCellIdentifier", for: indexPath) as? VisitedPlaceCollectionViewCell else {
             return UICollectionViewCell()
         }
-        cell.configure(myImage: "Facebook", myTitle: "Saint Petersbourg", mySubtitle: "voici une description un peu pas comme les autres #Russia #cookicock", myNumberOfLike: "86")
+
+        let visitedPlace = user.visitedPlaces[indexPath.row]
+
+        cell.configure(myImage: visitedPlace.image, myTitle: visitedPlace.title, mySubtitle: visitedPlace.subTitle, myNumberOfLike: visitedPlace.numberOfLike, ImageIsLike: visitedPlace.imageIsLike)
         return cell
     }
 }

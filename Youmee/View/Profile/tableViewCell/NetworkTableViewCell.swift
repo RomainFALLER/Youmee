@@ -13,7 +13,7 @@ class NetworkTableViewCell: UITableViewCell{
     @IBOutlet weak var networkcollectionView: UICollectionView!
     
     @IBOutlet weak var collectionViewHeight: NSLayoutConstraint!
-    
+    var user: User!
     override func awakeFromNib() {
         super.awakeFromNib()
         collectionViewHeight.constant = 20
@@ -27,19 +27,21 @@ class NetworkTableViewCell: UITableViewCell{
 
         // Configure the view for the selected state
     }
-
+    func configureUser(myUser: User){
+        user = myUser
+    }
 }
 extension NetworkTableViewCell: UICollectionViewDataSource,UICollectionViewDelegate{
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return netWorkList.count
+        return user.networks.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "NetworkCellIdentifier", for: indexPath) as? NetworkCollectionViewCell else {
             return UICollectionViewCell()
         }
-        cell.configure(image: netWorkList[indexPath.row])
+        cell.configure(image: user.networks[indexPath.row].name)
         return cell
     }
 }

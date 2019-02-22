@@ -10,10 +10,17 @@ import Foundation
 import UIKit
 
 extension UIFont{
-    public class func avenirNext(ofSize size: CGFloat) -> UIFont{
-        return UIFont(name: "Avenir Next", size: size)!
+    public enum stylefont: String {
+        case Bold, BoldItalic, DemiBold, DemiBoldItalic, Heavy, HeavyItalic, Medium, MediumItalic, Regular, UltraLight, UltraLightItalic
+    }
+    public enum fontBook: String{
+        case HelveticaNeue,AvenirNext
+    }
+    public class func fontWithStyle(ofSize size: CGFloat,font: fontBook, style: stylefont) -> UIFont{
+        return UIFont(name: "\(font)-\(style)", size: size)!
     }
     public class func textFont() -> UIFont{
+
         return UIFont(name: "Avenir Next", size: 12)!
     }
     public class func titleFont() -> UIFont{

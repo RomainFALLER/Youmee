@@ -21,6 +21,7 @@
 		14BE6C4D221B4C7100FD0BA2 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BE6C4C221B4C7100FD0BA2 /* NetworkService.swift */; };
 		14BE6C53221DA64400FD0BA2 /* LastVisitedPlaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BE6C52221DA64400FD0BA2 /* LastVisitedPlaceTableViewCell.swift */; };
 		14BE6C55221DB8BB00FD0BA2 /* VisitedPlaceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BE6C54221DB8BB00FD0BA2 /* VisitedPlaceCollectionViewCell.swift */; };
+		14BE71A42220521F002803F5 /* VisitedPlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BE71A32220521F002803F5 /* VisitedPlace.swift */; };
 		302003E7C8164473F3D05A50 /* Pods_YoumeeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24AF5EB85F411172546A1D2D /* Pods_YoumeeTests.framework */; };
 		5071449922189CAE005B5255 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5071449822189CAE005B5255 /* AppDelegate.swift */; };
 		5071449E22189CAE005B5255 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5071449C22189CAE005B5255 /* Main.storyboard */; };
@@ -70,6 +71,7 @@
 		14BE6C4C221B4C7100FD0BA2 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		14BE6C52221DA64400FD0BA2 /* LastVisitedPlaceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastVisitedPlaceTableViewCell.swift; sourceTree = "<group>"; };
 		14BE6C54221DB8BB00FD0BA2 /* VisitedPlaceCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitedPlaceCollectionViewCell.swift; sourceTree = "<group>"; };
+		14BE71A32220521F002803F5 /* VisitedPlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitedPlace.swift; sourceTree = "<group>"; };
 		24AF5EB85F411172546A1D2D /* Pods_YoumeeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YoumeeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		447C0B55A6FE38FF73E1DDCB /* Pods-YoumeeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YoumeeTests.debug.xcconfig"; path = "Target Support Files/Pods-YoumeeTests/Pods-YoumeeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5071449522189CAE005B5255 /* Youmee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Youmee.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,13 +127,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		14BE6C0B2218C8A400FD0BA2 /* Profile */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Profile;
-			sourceTree = "<group>";
-		};
 		14BE6C0E2218CBDE00FD0BA2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -224,6 +219,14 @@
 			path = User;
 			sourceTree = "<group>";
 		};
+		14BE71A22220520F002803F5 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				14BE71A32220521F002803F5 /* VisitedPlace.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		4A801DDB549A680FCDF4FE31 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -290,7 +293,7 @@
 		5076EB8B22189DA80082468B /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				14BE6C0B2218C8A400FD0BA2 /* Profile */,
+				14BE71A22220520F002803F5 /* Profile */,
 				5076EB9422189E990082468B /* Map */,
 				5076EB9322189E940082468B /* Login */,
 				5076EB9222189E860082468B /* Chat */,
@@ -603,6 +606,7 @@
 				50D5B1822219B6A3001251E3 /* loginModel.swift in Sources */,
 				14BE6C53221DA64400FD0BA2 /* LastVisitedPlaceTableViewCell.swift in Sources */,
 				14BE6C45221B1E0600FD0BA2 /* Network.swift in Sources */,
+				14BE71A42220521F002803F5 /* VisitedPlace.swift in Sources */,
 				14BE6C0D2218C92B00FD0BA2 /* User.swift in Sources */,
 				14BE6C322219FDF900FD0BA2 /* buttonExtension.swift in Sources */,
 				14BE6C3F221A289E00FD0BA2 /* NetworkList.swift in Sources */,

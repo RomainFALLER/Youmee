@@ -19,6 +19,7 @@ class phoneLoginController : UIViewController, UITextFieldDelegate {
     
     @IBAction func backButtonDidTap(_ sender: Any) {
         dismiss(animated: true, completion: nil)
+        self.view.endEditing(true)
     }
     
     @IBAction func editingChanged(_ sender: Any) {

@@ -16,7 +16,10 @@ class facebookLoginController : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         imageArray = [#imageLiteral(resourceName: "viewTutorial1"),#imageLiteral(resourceName: "viewTutorial1")]
-        self.createImageView(imageArray: imageArray)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        createScrollViewContent(imageArray: imageArray)
     }
     
     @IBAction func facebookLoginDidTap(_ sender: Any) {
@@ -30,18 +33,17 @@ class facebookLoginController : UIViewController {
     @IBAction func emailLoginDidTap(_ sender: Any) {
     }
     
-    func createImageView(imageArray: [UIImage]) {
+    func createScrollViewContent(imageArray: [UIImage]) {
         for i in 0..<imageArray.count
         {
             let imageView = UIImageView()
             imageView.image = imageArray[i]
             imageView.contentMode = .scaleAspectFit
-            
             let xPosition = self.tutorialScrollView.frame.width * CGFloat(i)
             imageView.frame = CGRect(x: xPosition, y: 0, width: self.tutorialScrollView.frame.width, height: self.tutorialScrollView.frame.height)
             tutorialScrollView.contentSize.width = tutorialScrollView.frame.width * CGFloat(i+1)
-            tutorialScrollView.contentSize.height = tutorialScrollView.frame.height
             tutorialScrollView.addSubview(imageView)
+
         }
     }
     

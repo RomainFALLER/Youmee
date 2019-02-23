@@ -30,7 +30,7 @@
 		507144B122189CB0005B5255 /* YoumeeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507144B022189CB0005B5255 /* YoumeeTests.swift */; };
 		507144BC22189CB0005B5255 /* YoumeeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507144BB22189CB0005B5255 /* YoumeeUITests.swift */; };
 		50D5B17F2219B3D9001251E3 /* facebookLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D5B17E2219B3D9001251E3 /* facebookLoginController.swift */; };
-		50D5B1822219B6A3001251E3 /* loginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D5B1812219B6A3001251E3 /* loginModel.swift */; };
+		50D5B1822219B6A3001251E3 /* facebookLoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D5B1812219B6A3001251E3 /* facebookLoginService.swift */; };
 		50D5B184221A0FA7001251E3 /* emailLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D5B183221A0FA7001251E3 /* emailLoginController.swift */; };
 		50D5B186221A0FB8001251E3 /* phoneLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D5B185221A0FB8001251E3 /* phoneLoginController.swift */; };
 		50FFA9BC2220A93D00FC803E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50FFA9BB2220A93D00FC803E /* Assets.xcassets */; };
@@ -87,7 +87,7 @@
 		507144BB22189CB0005B5255 /* YoumeeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoumeeUITests.swift; sourceTree = "<group>"; };
 		507144BD22189CB0005B5255 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50D5B17E2219B3D9001251E3 /* facebookLoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = facebookLoginController.swift; sourceTree = "<group>"; };
-		50D5B1812219B6A3001251E3 /* loginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = loginModel.swift; path = Youmee/loginModel.swift; sourceTree = SOURCE_ROOT; };
+		50D5B1812219B6A3001251E3 /* facebookLoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = facebookLoginService.swift; path = Youmee/facebookLoginService.swift; sourceTree = SOURCE_ROOT; };
 		50D5B183221A0FA7001251E3 /* emailLoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = emailLoginController.swift; sourceTree = "<group>"; };
 		50D5B185221A0FB8001251E3 /* phoneLoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = phoneLoginController.swift; sourceTree = "<group>"; };
 		50FFA9BB2220A93D00FC803E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -323,7 +323,7 @@
 		5076EB9322189E940082468B /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				50D5B1812219B6A3001251E3 /* loginModel.swift */,
+				50D5B1812219B6A3001251E3 /* facebookLoginService.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -611,7 +611,7 @@
 				14BE6C4A221B26C400FD0BA2 /* UserService.swift in Sources */,
 				14BE6C43221A2BE900FD0BA2 /* NetworkCollectionViewCell.swift in Sources */,
 				50D5B184221A0FA7001251E3 /* emailLoginController.swift in Sources */,
-				50D5B1822219B6A3001251E3 /* loginModel.swift in Sources */,
+				50D5B1822219B6A3001251E3 /* facebookLoginService.swift in Sources */,
 				14BE6C53221DA64400FD0BA2 /* LastVisitedPlaceTableViewCell.swift in Sources */,
 				14BE6C45221B1E0600FD0BA2 /* Network.swift in Sources */,
 				14BE71A42220521F002803F5 /* VisitedPlace.swift in Sources */,

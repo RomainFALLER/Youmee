@@ -14,7 +14,6 @@ class emailLoginController : UIViewController, UITextFieldDelegate {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var emailLoginButton: UIButton!
     
-    
     @IBAction func backButtonDidTap(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }

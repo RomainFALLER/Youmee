@@ -26,7 +26,6 @@
 		5071449922189CAE005B5255 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5071449822189CAE005B5255 /* AppDelegate.swift */; };
 		5071449E22189CAE005B5255 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5071449C22189CAE005B5255 /* Main.storyboard */; };
 		507144A122189CAE005B5255 /* Youmee.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5071449F22189CAE005B5255 /* Youmee.xcdatamodeld */; };
-		507144A322189CB0005B5255 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 507144A222189CB0005B5255 /* Assets.xcassets */; };
 		507144A622189CB0005B5255 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 507144A422189CB0005B5255 /* LaunchScreen.storyboard */; };
 		507144B122189CB0005B5255 /* YoumeeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507144B022189CB0005B5255 /* YoumeeTests.swift */; };
 		507144BC22189CB0005B5255 /* YoumeeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507144BB22189CB0005B5255 /* YoumeeUITests.swift */; };
@@ -34,6 +33,7 @@
 		50D5B1822219B6A3001251E3 /* loginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D5B1812219B6A3001251E3 /* loginModel.swift */; };
 		50D5B184221A0FA7001251E3 /* emailLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D5B183221A0FA7001251E3 /* emailLoginController.swift */; };
 		50D5B186221A0FB8001251E3 /* phoneLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D5B185221A0FB8001251E3 /* phoneLoginController.swift */; };
+		50FFA9BC2220A93D00FC803E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50FFA9BB2220A93D00FC803E /* Assets.xcassets */; };
 		8EFE010BE142B5CC00CFFC0E /* Pods_YoumeeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6AD3188CB14E8CBDCD72CE1 /* Pods_YoumeeUITests.framework */; };
 		9D014C86E10C2E6117E3DCBB /* Pods_Youmee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA3D600A8381A5B919BA8D19 /* Pods_Youmee.framework */; };
 /* End PBXBuildFile section */
@@ -78,7 +78,6 @@
 		5071449822189CAE005B5255 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5071449D22189CAE005B5255 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		507144A022189CAE005B5255 /* Youmee.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Youmee.xcdatamodel; sourceTree = "<group>"; };
-		507144A222189CB0005B5255 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		507144A522189CB0005B5255 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		507144A722189CB0005B5255 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		507144AC22189CB0005B5255 /* YoumeeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YoumeeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,6 +90,7 @@
 		50D5B1812219B6A3001251E3 /* loginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = loginModel.swift; path = Youmee/loginModel.swift; sourceTree = SOURCE_ROOT; };
 		50D5B183221A0FA7001251E3 /* emailLoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = emailLoginController.swift; sourceTree = "<group>"; };
 		50D5B185221A0FB8001251E3 /* phoneLoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = phoneLoginController.swift; sourceTree = "<group>"; };
+		50FFA9BB2220A93D00FC803E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		69B761B42D92537364DFFD49 /* Pods-YoumeeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YoumeeUITests.debug.xcconfig"; path = "Target Support Files/Pods-YoumeeUITests/Pods-YoumeeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A6AD3188CB14E8CBDCD72CE1 /* Pods_YoumeeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YoumeeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA3D600A8381A5B919BA8D19 /* Pods_Youmee.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Youmee.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,8 +131,8 @@
 			isa = PBXGroup;
 			children = (
 				5071449822189CAE005B5255 /* AppDelegate.swift */,
-				507144A222189CB0005B5255 /* Assets.xcassets */,
 				507144A722189CB0005B5255 /* Info.plist */,
+				50FFA9BB2220A93D00FC803E /* Assets.xcassets */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -266,6 +266,7 @@
 				5076EB8C22189DB20082468B /* View */,
 				5076EB8B22189DA80082468B /* Model */,
 				14BE6C302219FDD000FD0BA2 /* Extension */,
+				50FFA9BA2220A8C600FC803E /* New Group */,
 				14BE6C0E2218CBDE00FD0BA2 /* Supporting Files */,
 				14BE6C0F2218CBFC00FD0BA2 /* Core Data */,
 			);
@@ -351,6 +352,13 @@
 				50D5B185221A0FB8001251E3 /* phoneLoginController.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		50FFA9BA2220A8C600FC803E /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		D3FC66D6EE302C29BB8AEB34 /* Pods */ = {
@@ -475,8 +483,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				507144A622189CB0005B5255 /* LaunchScreen.storyboard in Resources */,
-				507144A322189CB0005B5255 /* Assets.xcassets in Resources */,
 				5071449E22189CAE005B5255 /* Main.storyboard in Resources */,
+				50FFA9BC2220A93D00FC803E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

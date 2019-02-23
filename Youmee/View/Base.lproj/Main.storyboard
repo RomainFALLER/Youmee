@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="e19-vf-kUY">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -59,6 +59,9 @@
                                     <action selector="facebookLoginDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r3W-v5-BmW"/>
                                 </connections>
                             </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ung-kn-56Z">
+                                <rect key="frame" x="0.0" y="94" width="375" height="423"/>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -69,16 +72,21 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tHV-MP-hPK" secondAttribute="trailing" constant="40" id="Tvp-Qz-xrX"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xSX-QO-RjJ" secondAttribute="trailing" constant="40" id="W2C-tb-LxT"/>
                             <constraint firstItem="Tok-ax-hPX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wah-8P-hHP"/>
+                            <constraint firstItem="Ung-kn-56Z" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="XTn-DF-fO9"/>
                             <constraint firstItem="xSX-QO-RjJ" firstAttribute="top" secondItem="tHV-MP-hPK" secondAttribute="bottom" constant="8" id="bd2-zQ-3Ak"/>
                             <constraint firstItem="l5R-Vk-hMm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="taX-mX-FgV"/>
                             <constraint firstItem="xSX-QO-RjJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="39" id="ylh-8H-kEL"/>
+                            <constraint firstItem="Ung-kn-56Z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ze7-sy-fgG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="tutorialScrollView" destination="Ung-kn-56Z" id="vZn-QE-GMe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-213.04347826086959" y="5.7065217391304355"/>
+            <point key="canvasLocation" x="-213.59999999999999" y="5.1724137931034484"/>
         </scene>
         <!--Email Login Controller-->
         <scene sceneID="NiB-63-boV">
@@ -130,6 +138,9 @@
                                     <constraint firstAttribute="width" constant="27" id="X3N-Df-cKA"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="backButton"/>
+                                <connections>
+                                    <action selector="backButtonDidTap:" destination="0JZ-QF-h2M" eventType="touchUpInside" id="0Lh-cK-NTf"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Awn-2D-nxX">
                                 <rect key="frame" x="85" y="275.66666666666669" width="204" height="52"/>

@@ -8,8 +8,11 @@
 
 import UIKit
 
+protocol visitedPlaceSelectionDelegate {
+    func didSelect(cell: UITableViewCell)
+}
 class LastVisitedPlaceTableViewCell: UITableViewCell {
-
+    var delegate :visitedPlaceSelectionDelegate?
     @IBOutlet weak var lastVisitedPlaceCollectionView: UICollectionView!
     
    @IBOutlet weak var collectionViewHeight: NSLayoutConstraint!
@@ -34,7 +37,13 @@ class LastVisitedPlaceTableViewCell: UITableViewCell {
 extension LastVisitedPlaceTableViewCell: UICollectionViewDataSource,UICollectionViewDelegate{
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 4
+        if user.visitedPlaces.count <= 4{
+            return user.visitedPlaces.count
+        }
+        else{
+            return 4
+        }
+        
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -43,9 +52,13 @@ extension LastVisitedPlaceTableViewCell: UICollectionViewDataSource,UICollection
         }
 
         let visitedPlace = user.visitedPlaces[indexPath.row]
-
-        cell.configure(myImage: visitedPlace.image, myTitle: visitedPlace.title, mySubtitle: visitedPlace.subTitle, myNumberOfLike: visitedPlace.numberOfLike, ImageIsLike: visitedPlace.imageIsLike)
+        cell.tag = indexPath.row
+        cell.configure(myImage: visitedPlace.images.first!, myTitle: visitedPlace.title, mySubtitle: visitedPlace.subTitle, myNumberOfLike: visitedPlace.numberOfLike, ImageIsLike: visitedPlace.imageIsLike)
         return cell
+    }
+
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        delegate?.didSelect(cell: self)
     }
 }
 extension LastVisitedPlaceTableViewCell: UICollectionViewDelegateFlowLayout{
